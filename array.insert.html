@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html0 lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array_insert</title>
+</head>
+<body>
+    <script>
+let arr = [25,56,86,57,36]
+let newarr = 23
+let pos = 2
+for (let i = arr.length - 1 ; i >=0 ; i--) {
+  if (i >= pos)
+  arr[i + 1] = arr[i]
+  if (i == pos){
+    arr[i] = newarr
+  }
+    
+}
+// arr.splice(2,0,25)
+document.write(`${arr} <br>`)
+
+    </script>
+</body>
+</html0

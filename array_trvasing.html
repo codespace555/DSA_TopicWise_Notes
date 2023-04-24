@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Trvasing and </title>
+</head>
+<script>
+    let data = [1,2,6,3,9,45,78,20,684,55,47];
+    data.map(element => {
+        document.write( `${element} <br>`)
+        
+    });
+
+// Accsesing
+   function access() {
+       let el= document.getElementById("in").value
+    
+    if (el < 0) {
+
+           document.getElementById("h").innerHTML= (` neg number is not allowed,${el} is not correct value`)
+        }
+    else if (el<data.length  && typeof parseInt(el)==="number") { //=>it is for vadilation  
+    
+        document.getElementById("h").innerHTML= (`${data[el]}`)
+     }
+
+    else{
+        document.getElementById("h").innerHTML= (` Enter valid number,${el} is not correct value`)
+
+    }
+
+  
+
+
+
+    }
+
+
+
+
+</script>
+
+<body>
+   
+    <input type="text" placeholder="enter your namber" id="in">
+    <button onclick="access()">sumbit</button>
+
+<h2 id="h"></h2>
+</body>
+</html>

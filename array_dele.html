@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array element Dele</title>
+</head>
+<body>
+   <script>
+    function del() {
+        
+    let mag = document.getElementById("newarry")
+    let data = [25,85,32,48,47,2,5]
+    let postion = parseInt( document.getElementById("inp").value)
+    for (let i = postion; i <= data.length-1 ; i++) {
+        data[i]= data[i+1]
+    // document.write(`${data[i]}<br>`)
+
+    }
+    data.length = data.length -1
+   mag.innerText = `new Array = [${data}]`
+
+}
+
+
+   </script> 
+   <h1>[25,85,32,48,47,2,5]</h1>
+
+   <input type="text" id="inp" placeholder="Enter postion number you want to delet">
+   <button id="debtn" onclick="del()">click</button>
+   <h1 id="newarry"></h1>
+</body>
+</html>

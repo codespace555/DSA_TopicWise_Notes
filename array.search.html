@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Search</title>
+</head>
+
+<body>
+    <script>
+        let data = [12, 52, 85, 45, 75, 9, 5];
+        function searchfn() {
+
+
+
+            let search = parseInt(document.getElementById("search").value)
+            let result = document.getElementById("result")
+
+            for (let i = 0; i < data.length - 1; i++) {
+                const element = data[i];
+                if (element == search) {
+                    console.log(i);
+                    result.innerText = `position of ${search} is ${i}`
+                    break
+                }
+                else {
+                    result.innerText = "it is not exist "
+                }
+            }
+
+        }
+    </script>
+    <h1>data = [12, 52, 85, 45, 75, 9, 5];</h1>
+    <input type="text" placeholder="Enter value" id="search">
+    <button onclick="searchfn()">click</button>
+    <div id="result"></div>
+
+</body>
+
+</html>
