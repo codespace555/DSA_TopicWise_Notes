@@ -6,3 +6,18 @@
 // console.log(co)
 
 let data = [25, 4, 8, 75, 7, 8, 5, 58, 5];
+let data1 = [25, 4, 8, 75, 7, 8, 5, 58, 5];
+let data3 =[]
+
+for (let i = 0; i < data.length; i++) {
+    data3[i] = data[i];
+    
+}
+
+for (let i = 0; i < data1.length; i++) {
+    data3[data1.length + i]= data1[i];
+    
+}
+
+console.log(data3)
+
