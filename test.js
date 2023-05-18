@@ -1,23 +1,16 @@
-// let data1 = [12, 52, 85, 45, 75, 9, 5,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75,12, 52, 85, 45, 75];
+let arr = [1, 2, 3, 4, 5];
+function myFunction(arr, k, n) {
+  
+  let j = n;
+  
+  arr.reverse()
+  for (let i = n; i < k; i--) {
+    const element = arr[i];
+    console.log(element)
+  }
 
-// let data2 = [12, 52, 85, 45, 75, 9, 5];
-
-// let co = [...data1,...data2]
-// console.log(co)
-
-let data = [25, 4, 8, 75, 7, 8, 5, 58, 5];
-let data1 = [25, 4, 8, 75, 7, 8, 5, 58, 5];
-let data3 =[]
-
-for (let i = 0; i < data.length; i++) {
-    data3[i] = data[i];
-    
 }
 
-for (let i = 0; i < data1.length; i++) {
-    data3[data1.length + i]= data1[i];
-    
-}
+console.log(myFunction(arr , 3,5));
 
-console.log(data3)
-
+// console.log(arry)
