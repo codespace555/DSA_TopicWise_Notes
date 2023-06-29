@@ -24,7 +24,7 @@ function Closest(nums, target) {
       if (currentSum === target) {
         return currentSum; // Found an exact match, return the sum
       } else if (
-        Math.abs(currentSum - target) < Math.abs(closestSum - target)
+        Math.abs(currentSum - target) < Math.abs(Sum - target)
       ) {
         Sum = currentSum; // Update the closest sum if necessary
       }
