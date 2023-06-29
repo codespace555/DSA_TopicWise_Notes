@@ -83,13 +83,13 @@ function transpose(matrix) {
   const transposMatrix = [];
   for (let i = 0; i < columns; i++) {
     transposMatrix[i] = [];
-    console.log(transposMatrix);
+    
     for (let j = 0; j < rows; j++) {
       transposMatrix[i][j] = matrix[j][i];
     }
   }
 
-  // return transposMatrix;
+  return transposMatrix;
 }
 
 // Driver code
